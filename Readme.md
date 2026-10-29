@@ -118,9 +118,9 @@ O modelo **API RESTful + Single Page Application (SPA) / App Mobile** é o padr�
 
 As aplicações front-end consomem APIs via requisições HTTP assíncronas (AJAX/Fetch).
 
-### Exemplo em JavaScript (Fetch API)
+### Exemplo em JavaScript (Fetch API)  (essa parte foi feita com ia)
 
-```javascript (essa parte foi feita com ia)
+```javascript
 // 1. Buscar dados (GET)
 async function buscarProdutos() {
   try {
