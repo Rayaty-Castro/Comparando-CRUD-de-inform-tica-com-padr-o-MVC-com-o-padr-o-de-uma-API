@@ -4,7 +4,7 @@ Este documento descreve as principais diferenças conceituais, estruturais e pr�
 
 ---
 
-## 🚀 Sumário
+## Sumário
 
 1. [Diferenças Arquiteturais](#1-diferenças-arquiteturais)
 2. [Responsabilidades de Cada Camada](#2-responsabilidades-de-cada-camada)
@@ -21,12 +21,12 @@ Este documento descreve as principais diferenças conceituais, estruturais e pr�
 
 A diferença fundamental entre uma aplicação **MVC Monolítica** (SSR) e uma **API RESTful** está na **forma como a resposta é entregue ao cliente**: o MVC tradicional devolve páginas HTML renderizadas no servidor, enquanto a API devolve dados estruturados (geralmente JSON).
 
-### 🏛️ MVC Monolítico
+###  MVC Monolítico
 * **Acoplamento:** Forte acoplamento entre a interface gráfica (Views) e a lógica do servidor.
 * **Renderização:** Processada no servidor via motores de template (Blade, Thymeleaf, JSP, EJS).
 * **Comunicação:** Submissões de formulários e recarregamento de páginas via HTTP (GET/POST).
 
-### ⚡ API RESTful (Arquitetura Desacoplada)
+###  API RESTful (Arquitetura Desacoplada)
 * **Desacoplamento:** Back-end e Front-end são projetos independentes (*Headless*).
 * **Renderização:** O Front-end (React, Vue, Mobile) roda no dispositivo do cliente e constrói a interface com os dados recebidos.
 * **Comunicação:** Troca de mensagens *stateless* utilizando verbos HTTP explícitos (`GET`, `POST`, `PUT`, `DELETE`, `PATCH`) e payload JSON.
@@ -42,12 +42,12 @@ A diferença fundamental entre uma aplicação **MVC Monolítica** (SSR) e uma *
 
 ## 2. Responsabilidades de Cada Camada
 
-### 📦 MVC Monolítico
+###  MVC Monolítico
 * **Model:** Representa a estrutura de dados, validações e regras do domínio.
 * **View:** Camada de apresentação visual (HTML/CSS/JS).
 * **Controller:** Processa as requisições, obtém dados do Model e retorna a View pronta para o navegador.
 
-### 🔌 API RESTful
+###  API RESTful
 * **Controller / Endpoint Layer:** Trata requisições HTTP, valida entradas e formata as respostas.
 * **Service Layer:** Contém a regra de negócio e inteligência da aplicação.
 * **Data Access Layer / Repository (Model):** Interface de consulta e persistência no banco de dados.
@@ -92,11 +92,11 @@ O modelo **API RESTful + Single Page Application (SPA) / App Mobile** é o padr�
 
 ## 6. Como Testar uma API
 
-### 🛠️ Testes Manuais de Endpoints
+###  Testes Manuais de Endpoints
 * **Clientes HTTP:** Postman, Insomnia, Bruno, VS Code Thunder Client.
 * **CLI:** Utilitário `cURL` para execuções em linha de comando.
 
-### 🧪 Testes Automatizados
+###  Testes Automatizados
 * **Testes de Unidade e Integração:** Verificação de rotas, controllers e regras da camada Service com simulação (mock) do banco de dados.
 * **Ferramentas por Ecossistema:**
   * **JavaScript / Node.js:** Jest, Supertest, Vitest.
@@ -120,7 +120,7 @@ As aplicações front-end consomem APIs via requisições HTTP assíncronas (AJA
 
 ### Exemplo em JavaScript (Fetch API)
 
-```javascript
+```javascript (essa parte foi feita com ia)
 // 1. Buscar dados (GET)
 async function buscarProdutos() {
   try {
