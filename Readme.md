@@ -1,4 +1,5 @@
 # Comparativo Arquitetural: CRUD MVC vs. API RESTful
+# produzido por Rayaty e Julio
 
 Este documento descreve as principais diferenças conceituais, estruturais e práticas entre a arquitetura **MVC Monolítica tradicional** (Server-Side Rendering) e uma **API RESTful desacoplada** (Client-Server).
 
